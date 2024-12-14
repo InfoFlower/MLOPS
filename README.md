@@ -1,2 +1,0 @@
-# MLOPS
-Pour les cours
