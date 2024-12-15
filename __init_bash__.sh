@@ -18,4 +18,3 @@ while IFS= read -r package; do
 done < "$requirementsFilePath"
 
 echo "Installation terminée."
-deactivate

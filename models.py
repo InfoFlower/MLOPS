@@ -1,17 +1,19 @@
 import polars as pl
 import sklearn as sk
 from sklearn import metrics
-from sklearn import 
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
 
 def predict_model(a,b):
     pass
 
-def train_model():
+def train_model(model,data):
     pass
 
 def test_models(data_test
                 ,new_model
                 ,OG_model):
+    pass
     
 
 def score(X_train,X_test,y_train,y_test,model):

@@ -56,7 +56,7 @@ class get_data:
 
 
 def csv_maker(input_dir = './data/RAW/'
-              ,output_dir='./data/old_weekly/'
+              ,output_dir='./data/old_daily/'
               ,data_in_file='data/station_detail_temp.csv'
               ,output_csv_file='data/station_detail_temp.csv'
               ,is_in=False
@@ -78,7 +78,7 @@ def csv_maker(input_dir = './data/RAW/'
             pl.lit(int(time.strftime('%M'))).alias('MIN')
         ])
         temp_df = temp_df.drop("num_bikes_available_types")
-        data_raw = pl.concat([data_raw, temp_df['station_id'==213688169]], how="vertical")
+        data_raw = pl.concat([data_raw, temp_df], how="vertical")
         os.rename(f"{input_dir}{fichier}",f"{output_dir}{fichier}")
     logging.debug(f'NOM DU FICHIER DE SORTIE {output_csv_file}')
     data_raw.write_csv(output_csv_file)
