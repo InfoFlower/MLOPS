@@ -1,5 +1,4 @@
 import logging 
-import api_call as dc
 logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 import json
 import requests as rq
