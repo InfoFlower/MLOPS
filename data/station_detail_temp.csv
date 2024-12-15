@@ -1,0 +1,2 @@
+station_id,num_bikes_available,numBikesAvailable,num_docks_available,numDocksAvailable,is_installed,is_returning,is_renting,last_reported,stationCode,YEAR,MONTH,DAY,DAY OF WEEK,DAY OF YEAR,HOUR,MIN
+213688169,4,4,31,31,1,1,1,1734276618,16107,24,12,15,7,350,17,22
