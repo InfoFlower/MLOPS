@@ -1,5 +1,5 @@
 import logging 
-import aa_datacollect as dc
+import api_call as dc
 logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 import json
 
