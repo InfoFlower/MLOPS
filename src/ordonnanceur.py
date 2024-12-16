@@ -4,7 +4,7 @@ import time
 import logging
 
 
-challenger_model=''
+challenger_model=
 champion_model=''
 while True:
     api_calleur=get_data()

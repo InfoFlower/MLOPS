@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4535266ea7f448f386757a0b3f00d3db/artifacts
+end_time: 1734387926404
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4535266ea7f448f386757a0b3f00d3db
+run_name: resilient-ram-423
+run_uuid: 4535266ea7f448f386757a0b3f00d3db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734387926293
+status: 4
+tags: []
+user_id: lenovo

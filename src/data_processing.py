@@ -68,7 +68,7 @@ def csv_maker(input_dir = './data/RAW/'
         chemin_complet = os.path.join(input_dir, fichier)
         with open(chemin_complet, 'r') as f:
             data = json.load(f)
-        temp_df = pl.DataFrame(data['data']['stations'])['station_id'==213688169]
+        temp_df = pl.DataFrame(data['data']['stations'])['station_id'==213688169]['last_reported' not in list(data_raw['last_reported'])]
         temp_df = temp_df.with_columns([
             pl.lit(int(time.strftime('%y'))).alias('YEAR'),
             pl.lit(int(time.strftime('%m'))).alias('MONTH'),
