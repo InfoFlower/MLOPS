@@ -24762,3 +24762,383 @@ TypeError: Object does not have a .write() method.
 2024-12-16 17:05:20,291 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
 2024-12-16 17:05:20,293 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
 2024-12-16 17:05:20,298 INFO:root:PREDICTION FOR 12/16/24|17:6 ===== None
+2024-12-16 17:06:19,298 INFO:root:START GET DATA
+2024-12-16 17:06:19,299 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:06:19,304 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:06:19,448 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:06:19,452 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:06:19,456 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:06:19,637 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:06:19,670 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:06:19,675 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:06:19,783 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:06:19,786 INFO:root:START OF PROC GET DATA
+2024-12-16 17:06:19,787 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:06:19,789 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:06:19,901 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:06:19,924 INFO:root:FICHIER CREE station_status_2024_12_16-17_06
+2024-12-16 17:06:19,924 INFO:root:END OF PROC GET DATA
+2024-12-16 17:06:19,985 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:06:19,987 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:06:19,990 INFO:root:PREDICTION FOR 12/16/24|17:7 ===== None
+2024-12-16 17:07:18,991 INFO:root:START GET DATA
+2024-12-16 17:07:18,991 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:07:18,996 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:07:19,147 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:07:19,151 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:07:19,154 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:07:19,280 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:07:19,311 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:07:19,315 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:07:19,461 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:07:19,466 INFO:root:START OF PROC GET DATA
+2024-12-16 17:07:19,466 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:07:19,470 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:07:19,593 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:07:19,621 INFO:root:FICHIER CREE station_status_2024_12_16-17_07
+2024-12-16 17:07:19,622 INFO:root:END OF PROC GET DATA
+2024-12-16 17:07:19,728 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:07:19,730 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:07:19,733 INFO:root:PREDICTION FOR 12/16/24|17:8 ===== None
+2024-12-16 17:08:18,734 INFO:root:START GET DATA
+2024-12-16 17:08:18,734 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:08:18,739 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:08:18,901 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:08:18,905 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:08:18,909 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:08:19,042 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:08:19,074 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:08:19,077 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:08:19,194 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:08:19,199 INFO:root:START OF PROC GET DATA
+2024-12-16 17:08:19,199 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:08:19,203 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:08:19,362 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:08:19,392 INFO:root:FICHIER CREE station_status_2024_12_16-17_08
+2024-12-16 17:08:19,392 INFO:root:END OF PROC GET DATA
+2024-12-16 17:08:19,507 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:08:19,509 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:08:19,513 INFO:root:PREDICTION FOR 12/16/24|17:9 ===== None
+2024-12-16 17:09:18,513 INFO:root:START GET DATA
+2024-12-16 17:09:18,514 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:09:18,518 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:09:18,662 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:09:18,665 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:09:18,669 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:09:18,835 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:09:18,864 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:09:18,869 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:09:18,981 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:09:18,985 INFO:root:START OF PROC GET DATA
+2024-12-16 17:09:18,985 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:09:18,988 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:09:19,113 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:09:19,141 INFO:root:FICHIER CREE station_status_2024_12_16-17_09
+2024-12-16 17:09:19,142 INFO:root:END OF PROC GET DATA
+2024-12-16 17:09:19,250 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:09:19,251 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:09:19,257 INFO:root:PREDICTION FOR 12/16/24|17:10 ===== None
+2024-12-16 17:10:18,258 INFO:root:START GET DATA
+2024-12-16 17:10:18,258 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:10:18,263 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:10:18,398 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:10:18,402 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:10:18,407 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:10:18,524 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:10:18,559 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:10:18,563 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:10:18,677 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:10:18,681 INFO:root:START OF PROC GET DATA
+2024-12-16 17:10:18,682 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:10:18,685 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:10:18,799 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:10:18,830 INFO:root:FICHIER CREE station_status_2024_12_16-17_10
+2024-12-16 17:10:18,831 INFO:root:END OF PROC GET DATA
+2024-12-16 17:10:18,937 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:10:18,938 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:10:18,942 INFO:root:PREDICTION FOR 12/16/24|17:11 ===== None
+2024-12-16 17:11:17,943 INFO:root:START GET DATA
+2024-12-16 17:11:17,943 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:11:17,948 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:11:18,100 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:11:18,104 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:11:18,108 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:11:18,224 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:11:18,256 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:11:18,259 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:11:18,374 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:11:18,379 INFO:root:START OF PROC GET DATA
+2024-12-16 17:11:18,380 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:11:18,383 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:11:18,544 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:11:18,582 INFO:root:FICHIER CREE station_status_2024_12_16-17_11
+2024-12-16 17:11:18,582 INFO:root:END OF PROC GET DATA
+2024-12-16 17:11:18,684 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:11:18,686 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:11:18,690 INFO:root:PREDICTION FOR 12/16/24|17:12 ===== None
+2024-12-16 17:12:17,690 INFO:root:START GET DATA
+2024-12-16 17:12:17,691 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:12:17,696 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:12:17,857 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:12:17,861 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:12:17,864 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:12:23,899 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:12:23,931 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:12:23,936 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:12:24,061 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:12:24,064 INFO:root:START OF PROC GET DATA
+2024-12-16 17:12:24,064 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:12:24,066 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:12:24,182 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:12:24,213 INFO:root:FICHIER CREE station_status_2024_12_16-17_12
+2024-12-16 17:12:24,213 INFO:root:END OF PROC GET DATA
+2024-12-16 17:12:24,275 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:12:24,276 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:12:24,280 INFO:root:PREDICTION FOR 12/16/24|17:13 ===== None
+2024-12-16 17:13:23,280 INFO:root:START GET DATA
+2024-12-16 17:13:23,281 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:13:23,286 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:13:23,393 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:13:23,397 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:13:23,401 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:13:23,517 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:13:23,547 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:13:23,551 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:13:23,673 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:13:23,678 INFO:root:START OF PROC GET DATA
+2024-12-16 17:13:23,679 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:13:23,682 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:13:23,833 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:13:23,861 INFO:root:FICHIER CREE station_status_2024_12_16-17_13
+2024-12-16 17:13:23,861 INFO:root:END OF PROC GET DATA
+2024-12-16 17:13:23,953 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:13:23,954 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:13:23,959 INFO:root:PREDICTION FOR 12/16/24|17:14 ===== None
+2024-12-16 17:14:22,959 INFO:root:START GET DATA
+2024-12-16 17:14:22,960 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:14:22,964 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:14:23,083 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:14:23,086 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:14:23,090 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:14:23,210 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:14:23,241 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:14:23,245 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:14:23,398 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:14:23,403 INFO:root:START OF PROC GET DATA
+2024-12-16 17:14:23,404 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:14:23,408 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:14:23,529 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:14:23,556 INFO:root:FICHIER CREE station_status_2024_12_16-17_14
+2024-12-16 17:14:23,557 INFO:root:END OF PROC GET DATA
+2024-12-16 17:14:23,645 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:14:23,646 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:14:23,650 INFO:root:PREDICTION FOR 12/16/24|17:15 ===== None
+2024-12-16 17:15:22,651 INFO:root:START GET DATA
+2024-12-16 17:15:22,651 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:15:22,656 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:15:22,790 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:15:22,793 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:15:22,796 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:15:22,958 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:15:22,988 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:15:22,993 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:15:23,139 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:15:23,143 INFO:root:START OF PROC GET DATA
+2024-12-16 17:15:23,144 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:15:23,146 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:15:23,299 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:15:23,335 INFO:root:FICHIER CREE station_status_2024_12_16-17_15
+2024-12-16 17:15:23,336 INFO:root:END OF PROC GET DATA
+2024-12-16 17:15:23,432 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:15:23,433 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:15:23,437 INFO:root:PREDICTION FOR 12/16/24|17:16 ===== None
+2024-12-16 17:16:22,437 INFO:root:START GET DATA
+2024-12-16 17:16:22,438 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:16:22,443 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:16:22,609 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:16:22,612 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:16:22,616 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:16:22,765 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:16:22,798 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:16:22,801 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:16:22,917 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:16:22,921 INFO:root:START OF PROC GET DATA
+2024-12-16 17:16:22,922 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:16:22,925 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:16:23,053 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:16:23,083 INFO:root:FICHIER CREE station_status_2024_12_16-17_16
+2024-12-16 17:16:23,083 INFO:root:END OF PROC GET DATA
+2024-12-16 17:16:23,187 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:16:23,188 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:16:23,191 INFO:root:PREDICTION FOR 12/16/24|17:17 ===== None
+2024-12-16 17:17:22,192 INFO:root:START GET DATA
+2024-12-16 17:17:22,192 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:17:22,197 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:17:22,320 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:17:22,324 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:17:22,327 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:17:22,442 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:17:22,478 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:17:22,482 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:17:22,605 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:17:22,610 INFO:root:START OF PROC GET DATA
+2024-12-16 17:17:22,610 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:17:22,614 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:17:22,747 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:17:22,779 INFO:root:FICHIER CREE station_status_2024_12_16-17_17
+2024-12-16 17:17:22,779 INFO:root:END OF PROC GET DATA
+2024-12-16 17:17:22,859 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:17:22,860 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:17:22,864 INFO:root:PREDICTION FOR 12/16/24|17:18 ===== None
+2024-12-16 17:18:21,864 INFO:root:START GET DATA
+2024-12-16 17:18:21,865 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:18:21,870 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:18:22,011 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:18:22,014 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:18:22,018 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:18:22,141 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:18:22,168 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:18:22,172 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:18:22,292 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:18:22,297 INFO:root:START OF PROC GET DATA
+2024-12-16 17:18:22,297 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:18:22,301 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:18:22,430 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:18:22,456 INFO:root:FICHIER CREE station_status_2024_12_16-17_18
+2024-12-16 17:18:22,457 INFO:root:END OF PROC GET DATA
+2024-12-16 17:18:22,571 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:18:22,573 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:18:22,578 INFO:root:PREDICTION FOR 12/16/24|17:19 ===== None
+2024-12-16 17:19:21,578 INFO:root:START GET DATA
+2024-12-16 17:19:21,579 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:19:21,584 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:19:21,702 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:19:21,705 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:19:21,709 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:19:21,825 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:19:21,854 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:19:21,858 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:19:21,977 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:19:21,981 INFO:root:START OF PROC GET DATA
+2024-12-16 17:19:21,982 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:19:21,985 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:19:22,105 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:19:22,141 INFO:root:FICHIER CREE station_status_2024_12_16-17_19
+2024-12-16 17:19:22,142 INFO:root:END OF PROC GET DATA
+2024-12-16 17:19:22,235 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:19:22,236 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:19:22,240 INFO:root:PREDICTION FOR 12/16/24|17:20 ===== None
+2024-12-16 17:20:21,241 INFO:root:START GET DATA
+2024-12-16 17:20:21,241 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:20:21,246 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:20:21,401 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:20:21,404 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:20:21,407 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:20:21,542 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:20:21,575 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:20:21,579 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:20:21,692 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:20:21,696 INFO:root:START OF PROC GET DATA
+2024-12-16 17:20:21,697 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:20:21,700 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:20:21,824 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:20:21,853 INFO:root:FICHIER CREE station_status_2024_12_16-17_20
+2024-12-16 17:20:21,853 INFO:root:END OF PROC GET DATA
+2024-12-16 17:20:22,051 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:20:22,052 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:20:22,057 INFO:root:PREDICTION FOR 12/16/24|17:21 ===== None
+2024-12-16 17:21:21,057 INFO:root:START GET DATA
+2024-12-16 17:21:21,058 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:21:21,063 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:21:21,185 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:21:21,188 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:21:21,192 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:21:21,308 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:21:21,347 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:21:21,350 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:21:21,462 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:21:21,468 INFO:root:START OF PROC GET DATA
+2024-12-16 17:21:21,468 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:21:21,472 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:21:21,597 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:21:21,628 INFO:root:FICHIER CREE station_status_2024_12_16-17_21
+2024-12-16 17:21:21,629 INFO:root:END OF PROC GET DATA
+2024-12-16 17:21:21,721 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:21:21,722 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:21:21,726 INFO:root:PREDICTION FOR 12/16/24|17:22 ===== None
+2024-12-16 17:22:20,726 INFO:root:START GET DATA
+2024-12-16 17:22:20,727 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:22:20,731 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:22:21,708 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:22:21,711 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:22:21,715 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:22:21,837 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:22:21,876 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:22:21,879 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:22:22,002 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:22:22,007 INFO:root:START OF PROC GET DATA
+2024-12-16 17:22:22,007 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:22:22,011 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:22:22,166 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:22:22,201 INFO:root:FICHIER CREE station_status_2024_12_16-17_22
+2024-12-16 17:22:22,201 INFO:root:END OF PROC GET DATA
+2024-12-16 17:22:22,314 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:22:22,315 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:22:22,319 INFO:root:PREDICTION FOR 12/16/24|17:23 ===== None
+2024-12-16 17:23:21,319 INFO:root:START GET DATA
+2024-12-16 17:23:21,320 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:23:21,325 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:23:21,445 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:23:21,448 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:23:21,452 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:23:21,580 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:23:21,620 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:23:21,624 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:23:21,764 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:23:21,768 INFO:root:START OF PROC GET DATA
+2024-12-16 17:23:21,769 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:23:21,772 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:23:21,895 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:23:21,926 INFO:root:FICHIER CREE station_status_2024_12_16-17_23
+2024-12-16 17:23:21,927 INFO:root:END OF PROC GET DATA
+2024-12-16 17:23:22,040 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:23:22,041 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:23:22,045 INFO:root:PREDICTION FOR 12/16/24|17:24 ===== None
+2024-12-16 17:24:21,045 INFO:root:START GET DATA
+2024-12-16 17:24:21,046 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:24:21,051 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:24:21,221 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:24:21,225 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:24:21,228 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:24:21,362 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:24:21,403 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:24:21,407 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:24:21,519 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:24:21,524 INFO:root:START OF PROC GET DATA
+2024-12-16 17:24:21,524 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:24:21,528 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:24:21,681 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:24:21,711 INFO:root:FICHIER CREE station_status_2024_12_16-17_24
+2024-12-16 17:24:21,711 INFO:root:END OF PROC GET DATA
+2024-12-16 17:24:21,815 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:24:21,816 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:24:21,820 INFO:root:PREDICTION FOR 12/16/24|17:25 ===== None
+2024-12-16 17:25:20,820 INFO:root:START GET DATA
+2024-12-16 17:25:20,821 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json
+2024-12-16 17:25:20,823 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:25:20,977 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/gbfs.json HTTP/11" 200 None
+2024-12-16 17:25:20,979 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json
+2024-12-16 17:25:20,981 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:25:21,098 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_information.json HTTP/11" 200 None
+2024-12-16 17:25:21,127 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/system_information.json
+2024-12-16 17:25:21,129 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:25:21,229 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/system_information.json HTTP/11" 200 None
+2024-12-16 17:25:21,232 INFO:root:START OF PROC GET DATA
+2024-12-16 17:25:21,232 INFO:root:CALLING https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json
+2024-12-16 17:25:21,234 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): velib-metropole-opendata.smovengo.cloud:443
+2024-12-16 17:25:21,372 DEBUG:urllib3.connectionpool:https://velib-metropole-opendata.smovengo.cloud:443 "GET /opendata/Velib_Metropole/station_status.json HTTP/11" 200 None
+2024-12-16 17:25:21,402 INFO:root:FICHIER CREE station_status_2024_12_16-17_25
+2024-12-16 17:25:21,402 INFO:root:END OF PROC GET DATA
+2024-12-16 17:25:21,463 DEBUG:root:Schema([('station_id', Int64), ('num_bikes_available', Int64), ('numBikesAvailable', Int64), ('num_docks_available', Int64), ('numDocksAvailable', Int64), ('is_installed', Int64), ('is_returning', Int64), ('is_renting', Int64), ('last_reported', Int64), ('stationCode', String), ('YEAR', Int32), ('MONTH', Int32), ('DAY', Int32), ('DAY OF WEEK', Int32), ('DAY OF YEAR', Int32), ('HOUR', Int32), ('MIN', Int32)])
+2024-12-16 17:25:21,464 DEBUG:root:NOM DU FICHIER DE SORTIE data/station_detail_temp.csv
+2024-12-16 17:25:21,468 INFO:root:PREDICTION FOR 12/16/24|17:26 ===== None
