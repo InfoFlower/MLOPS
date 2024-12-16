@@ -9,23 +9,23 @@ import json
 import os
 
 
-Schema=[('station_id',          pl.Int64),
-        ('num_bikes_available', pl.Int64),
-        ('numBikesAvailable',   pl.Int64),
-        ('num_docks_available', pl.Int64),
-        ('numDocksAvailable',   pl.Int64),
-        ('is_installed',        pl.Int64),
-        ('is_returning',        pl.Int64),
-        ('is_renting',          pl.Int64),
-        ('last_reported',       pl.Int64),
-        ('stationCode',         pl.String),
-        ('YEAR',                pl.Int32),
-        ('MONTH',               pl.Int32),
-        ('DAY',                 pl.Int32),
-        ('DAY OF WEEK',         pl.Int32),
-        ('DAY OF YEAR',         pl.Int32),
-        ('HOUR',                pl.Int32),
-        ('MIN',                 pl.Int32)]
+Schema={'station_id'           : pl.Int64, 
+'num_bikes_available'  : pl.Int64, 
+'numBikesAvailable'    : pl.Int64, 
+'num_docks_available'  : pl.Int64, 
+'numDocksAvailable'    : pl.Int64, 
+'is_installed'         : pl.Int64, 
+'is_returning'         : pl.Int64, 
+'is_renting'           : pl.Int64, 
+'last_reported'        : pl.Int64, 
+'stationCode'          : pl.String, 
+'YEAR'                 : pl.Int32, 
+'MONTH'                : pl.Int32, 
+'DAY'                  : pl.Int32, 
+'DAY OF WEEK'          : pl.Int32, 
+'DAY OF YEAR'          : pl.Int32, 
+'HOUR'                 : pl.Int32, 
+'MIN'                  : pl.Int32}
 
 URLS=[('https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/gbfs.json','gbfs'),
       ("https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json",'stat_inf'),
@@ -60,14 +60,15 @@ def csv_maker(input_dir = './data/RAW/'
               ,data_in_file='data/station_detail_temp.csv'
               ,output_csv_file='data/station_detail_temp.csv'
               ,is_in=False
-              ,Schema=Schema):
-    if is_in:pl.read_csv(data_in_file,schema=Schema)
+              ,Schema=Schema
+              ,delete=False):
+    if is_in:data_raw=pl.read_csv(data_in_file,schema=Schema)
     else : data_raw = pl.DataFrame(schema=Schema)
     for fichier in os.listdir(input_dir):
         chemin_complet = os.path.join(input_dir, fichier)
         with open(chemin_complet, 'r') as f:
             data = json.load(f)
-        temp_df = pl.DataFrame(data['data']['stations'])
+        temp_df = pl.DataFrame(data['data']['stations'])['station_id'==213688169]
         temp_df = temp_df.with_columns([
             pl.lit(int(time.strftime('%y'))).alias('YEAR'),
             pl.lit(int(time.strftime('%m'))).alias('MONTH'),
@@ -78,10 +79,12 @@ def csv_maker(input_dir = './data/RAW/'
             pl.lit(int(time.strftime('%M'))).alias('MIN')
         ])
         temp_df = temp_df.drop("num_bikes_available_types")
+        logging.debug(temp_df.schema)
         data_raw = pl.concat([data_raw, temp_df], how="vertical")
-        os.rename(f"{input_dir}{fichier}",f"{output_dir}{fichier}")
+        if delete:os.remove(f"{input_dir}{fichier}")
+        else : os.rename(f"{input_dir}{fichier}",f"{output_dir}{fichier}")
     logging.debug(f'NOM DU FICHIER DE SORTIE {output_csv_file}')
-    data_raw.write_csv(output_csv_file)
+    data_raw.write_csv(data_in_file)
 
 def get_train_data():
     pass
