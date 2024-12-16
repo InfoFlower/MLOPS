@@ -4,16 +4,17 @@ from sklearn import metrics
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 
-def predict_model(a,b):
-    pass
+def predict_model(model,data):
+    return model.predict(data)
+    
 
 def train_model(model,data):
-    pass
+    return model.fit(data)
 
 def test_models(data_test
                 ,new_model
                 ,OG_model):
-    pass
+    
     
 
 def score(X_train,X_test,y_train,y_test,model):
