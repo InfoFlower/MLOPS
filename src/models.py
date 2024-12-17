@@ -2,16 +2,23 @@ from sklearn import metrics
 import logging
 import mlflow as mf
 from sklearn.model_selection import train_test_split
-mf.set_tracking_uri('http://172.0.0.1:8080')
+mf.sklearn.autolog()
+logging.getLogger('matplotlib').setLevel(logging.WARNING)
 logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
+from mlflow.models import infer_signature
 
-def log_model_version(model,model_name,data,scores,hyperparam_value):
+
+mf.set_tracking_uri("")
+
+def log_model_version(model,model_name,signature,data,scores,hyperparam_value,exprience_name,version):
     """
     """
-    data.write_csv('temp/train_data.csv')
+    mf.set_experiment(experiment_name=exprience_name)
+    data.to_csv('temp/train_data.csv')
     data_file_path='temp/train_data.csv'
-    with mf.start_run() as run:
-        mf.sklearn.log_model(model,model_name)
+    mf.log_param("version", version)
+    with mf.start_run(nested=True) as run:
+        mf.sklearn.log_model(model,model_name,signature= signature)
         for metric_name, metric_value in scores.items():
             mf.log_metric(metric_name, metric_value)
         mf.log_artifact(data_file_path)
@@ -25,14 +32,14 @@ class model_maker_tester:
         self.fit_cols=fit_cols
         self.y_col=y_col
 
-    def score(self,X_test,y_test):
+    def score(self,model,X_test,y_test):
         """
         Affichage des metrics
         """
-        return {'accuracy' :        round(float(metrics.precision_score(y_test,self.model.predict(X_test))),2),
-                       'auc' :      round(float(metrics.roc_auc_score(y_test,self.model.predict(X_test))),2),
-                       'Gauc' :      round(float(metrics.roc_auc_score(y_test,self.model.predict_proba(X_test)[:,1], average='weighted')),2),
-                       'f1-score' : round(float(metrics.f1_score(y_test,self.model.predict(X_test))),2)}
+        return {'accuracy' :        round(float(metrics.precision_score(y_test,model.predict(X_test))),2),
+                       'auc' :      round(float(metrics.roc_auc_score(y_test,model.predict(X_test))),2),
+                       'Gauc' :      round(float(metrics.roc_auc_score(y_test,model.predict_proba(X_test)[:,1], average='weighted')),2),
+                       'f1-score' : round(float(metrics.f1_score(y_test,model.predict(X_test))),2)}
 
 
     def make_dummies_X_y(self,data,flg_train_test,test_size=0.33,rnd_state=42):
@@ -45,23 +52,23 @@ class model_maker_tester:
         else : ret = X,y
         return ret
     
-    def __call__(self,model,model_name,data,flg_to_score=True,flg_first=False):
+    def __call__(self,model,model_name,data,version,experience_name='Velib',flg_to_score=True,flg_first=False):
         logging.debug(f'DATA : {data}')
-        self.model=model
-        self.model_name=model_name
-
+        model=model
+        model_name=model_name
+        X_train, X_test, y_train, y_test = self.make_dummies_X_y(data,flg_train_test=True)
+        X,y=self.make_dummies_X_y(data=data,flg_train_test=False)
         if flg_to_score :
-            X_train, X_test, y_train, y_test = self.make_dummies_X_y(data,flg_train_test=True)
             logging.info('FITTING DATA')
-            if flg_first: self.model.fit(X_train,y_train)
+            if flg_first:model.fit(X_train,y_train)
             logging.info('START SCORING')
-            score=self.score(X_test,y_test)
+            score=self.score(model,X_test,y_test)
             ret=score
             logging.info(f'SCORE DU MODELE  {score}')
-            log_model_version(model,model_name,data,score,model.get_params())
+            signature=infer_signature(X,model.predict(X))
+            log_model_version(model,model_name,signature,data,score,model.get_params(),experience_name,version)
 
         else :
-            X,y=self.make_dummies_X_y(data=data,flg_train_test=False)
             logging.debug(f'DATA TO PREDICT {X}')
-            logging.info(f'PREDICTION DU MODEL {self.model.predict(X)}')
-        
+            logging.info(f'PREDICTION DU MODEL {model.predict(X)}')
+        return model

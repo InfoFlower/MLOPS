@@ -86,5 +86,5 @@ def csv_maker(input_dir = './data/RAW/'
     logging.debug(f'NOM DU FICHIER DE SORTIE {output_csv_file}')
     data_raw.write_csv(data_in_file)
 
-def get_train_data():
-    pass
+def make_data_set(file_path):
+    

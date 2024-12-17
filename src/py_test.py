@@ -1,5 +1,5 @@
 import numpy as np
-import polars as pl
+import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from models import model_maker_tester
 
@@ -13,13 +13,14 @@ data = {
 }
 
 # Créer un DataFrame Polars
-df = pl.DataFrame(data)
+df = pd.DataFrame(data)
 model = LogisticRegression()
 
 
 test=model_maker_tester(None,['feature1','feature2','feature3'],'target')
 know=test(model,'logistic',df,flg_first=True)
-model_test=know[1][0]
+print(know)
+model_test=know
 data_to_pred=df[['feature1','feature2','feature3']]
 print('PREDICTION ',test(model_test,'logistic',df,flg_to_score=False))
 print('SCORING ',test(model_test,'logistic',df))
