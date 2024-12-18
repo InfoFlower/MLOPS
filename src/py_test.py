@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-import logging
-from data_modelisation import model_maker_tester
-logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
+from models import model_maker_tester
 
 ####### JEU DE DONNEES TEST FAIT PAR IA #############
 # Créer des données de test
