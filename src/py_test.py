@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from models import model_maker_tester
+from data_modelisation import model_maker_tester
 
 ####### JEU DE DONNEES TEST FAIT PAR IA #############
 # Créer des données de test

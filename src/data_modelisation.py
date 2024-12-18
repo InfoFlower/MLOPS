@@ -67,7 +67,7 @@ class model_maker_tester:
             logging.info(f'SCORE DU MODELE  {score}')
             signature=infer_signature(X,model.predict(X))
             log_model_version(model,model_name,signature,data,score,model.get_params(),experience_name,version)
-
+        #prevoir un return (soit score soit model)
         else :
             logging.debug(f'DATA TO PREDICT {X}')
             logging.info(f'PREDICTION DU MODEL {model.predict(X)}')
