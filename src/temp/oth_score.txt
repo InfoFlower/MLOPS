@@ -1,0 +1,4 @@
+,
+                       'auc' :      round(float(metrics.roc_auc_score(y_test,model.predict(X_test),average='macro',multi_class='ovo')),2),
+                       'Gauc' :      round(float(metrics.roc_auc_score(y_test,model.predict_proba(X_test)[:,1], average='weighted',multi_class='ovo')),2),
+                       'f1-score' : round(float(metrics.f1_score(y_test,model.predict(X_test),average='macro',multi_class='ovo')),2)

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/notebooks/mlruns/0/7975dc2292dc4936acde93c89be39338/artifacts
+end_time: 1734537948198
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7975dc2292dc4936acde93c89be39338
+run_name: bold-flea-363
+run_uuid: 7975dc2292dc4936acde93c89be39338
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734537934424
+status: 3
+tags: []
+user_id: lenovo

@@ -1,0 +1,11 @@
+digest: 7388fef2
+name: dataset
+profile: '{"num_rows": 169, "num_elements": 1183}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "last_reported", "required":
+  true}, {"type": "long", "name": "DAY", "required": true}, {"type": "long", "name":
+  "DAY OF WEEK", "required": true}, {"type": "long", "name": "DAY OF YEAR", "required":
+  true}, {"type": "long", "name": "HOUR", "required": true}, {"type": "long", "name":
+  "MIN", "required": true}, {"type": "long", "name": "numDocks", "required": true}]}'
+source: '{"tags": {"mlflow.user": "lenovo", "mlflow.source.name": "c:\\Users\\lenovo\\Desktop\\Cours\\034_MLOPS\\.env\\Lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

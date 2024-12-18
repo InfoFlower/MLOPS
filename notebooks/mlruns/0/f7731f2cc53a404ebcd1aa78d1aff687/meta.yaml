@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/notebooks/mlruns/0/f7731f2cc53a404ebcd1aa78d1aff687/artifacts
+end_time: 1734537594147
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f7731f2cc53a404ebcd1aa78d1aff687
+run_name: clumsy-goose-490
+run_uuid: f7731f2cc53a404ebcd1aa78d1aff687
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734537588703
+status: 3
+tags: []
+user_id: lenovo

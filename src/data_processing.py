@@ -14,7 +14,7 @@ class make_great_dataset:
         data_clean_unique=data_clean.drop_duplicates(self.key)
         data_featured=data_clean_unique.reset_index(drop=True)[1:]
         if col_make_delta is not None :  data_featured['delta']=self.delta(data_clean_unique.reset_index(),col_make_delta)
-        return data_featured
+        return data_featured.dropna().reset_index(drop=True)
     
     def delta(self,data,col):
         """
@@ -30,7 +30,7 @@ class make_great_dataset:
     def make_sum(self,data):
         return data[self.col_1]+data[self.col_2]
 
-    def make_date(data,col):
+    def make_date(self,data,col):
         return [datetime.datetime.fromtimestamp(i).strftime('%Y%m%d') for i in data[col]]
 
     def from_data_to_delta_data(data):

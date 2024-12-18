@@ -1,27 +1,25 @@
-import numpy as np
 import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from models import model_maker_tester
-
-####### JEU DE DONNEES TEST FAIT PAR IA #############
-# Créer des données de test
-data = {
-    "feature1": np.random.rand(100),
-    "feature2": np.random.rand(100),
-    "feature3": np.random.rand(100),
-    "target": np.random.randint(0, 2, 100)  # Target binaire pour un exemple de classification
-}
-
-# Créer un DataFrame Polars
-df = pd.DataFrame(data)
-model = LogisticRegression()
+from sklearn.ensemble import RandomForestClassifier
+from data_modelisation import model_maker_tester
+from data_processing import make_great_dataset
+import mlflow
 
 
-test=model_maker_tester(None,['feature1','feature2','feature3'],'target')
-know=test(model,'logistic',df,'V0.1',flg_first=True)
-print(know)
-model_test=know
-data_to_pred=df[['feature1','feature2','feature3']]
-print('PREDICTION ',test(model_test,'logistic',df,flg_to_score=False))
-print('SCORING ',test(model_test,'logistic',df))
-print(model_test.get_params())
+
+mlflow.set_tracking_uri('file:/./mlruns')
+#Var d'initialisation du data_processing
+col_to_drop=['MONTH','YEAR','stationCode','is_installed','station_id','is_returning','is_renting','num_bikes_available','num_docks_available','numDocksAvailable']
+key=['last_reported','HOUR','numBikesAvailable']
+#Var pour l'appel (traitements à faire)
+col_sum_1='numBikesAvailable'
+col_sum_2='numDocksAvailable'
+col_make_delta = 'numBikesAvailable'
+col_make_sum='numDocks'
+col_make_date='last_reported'
+test=make_great_dataset(col_to_drop,key)
+df=test('data/station_detail_temp.csv',col_sum_1,col_sum_2,col_make_sum,col_make_date=col_make_date)
+to_fit=['last_reported', 'DAY', 'DAY OF WEEK','DAY OF YEAR', 'HOUR', 'MIN', 'numDocks']
+to_pred='numBikesAvailable'
+cat_cols=None
+model_maker = model_maker_tester(cat_cols,to_fit,to_pred)
+model_maker(RandomForestClassifier(),'LogisticRegression',df,'V0_test_ipynb','Velib',flg_first=True)

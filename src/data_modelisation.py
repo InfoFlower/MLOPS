@@ -36,10 +36,7 @@ class model_maker_tester:
         """
         Affichage des metrics
         """
-        return {'accuracy' :        round(float(metrics.precision_score(y_test,model.predict(X_test))),2),
-                       'auc' :      round(float(metrics.roc_auc_score(y_test,model.predict(X_test))),2),
-                       'Gauc' :      round(float(metrics.roc_auc_score(y_test,model.predict_proba(X_test)[:,1], average='weighted')),2),
-                       'f1-score' : round(float(metrics.f1_score(y_test,model.predict(X_test))),2)}
+        return {'accuracy' :        round(float(metrics.precision_score(y_test,model.predict(X_test),average='macro')),2)}
 
 
     def make_dummies_X_y(self,data,flg_train_test,test_size=0.33,rnd_state=42):
@@ -59,12 +56,12 @@ class model_maker_tester:
         model_name=model_name
         X_train, X_test, y_train, y_test = self.make_dummies_X_y(data,flg_train_test=True)
         X,y=self.make_dummies_X_y(data=data,flg_train_test=False)
+        logging.info(f'Data to fit or predict : {X,y,X_train,X_test,y_train,y_test}')
         if flg_to_score :
             logging.info('FITTING DATA')
             if flg_first:model.fit(X_train,y_train)
             logging.info('START SCORING')
             score=self.score(model,X_test,y_test)
-            ret=score
             logging.info(f'SCORE DU MODELE  {score}')
             signature=infer_signature(X,model.predict(X))
             log_model_version(model,model_name,signature,data,score,model.get_params(),experience_name,version)

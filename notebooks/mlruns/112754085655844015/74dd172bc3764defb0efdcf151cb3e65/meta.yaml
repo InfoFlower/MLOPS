@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/notebooks/mlruns/112754085655844015/74dd172bc3764defb0efdcf151cb3e65/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '112754085655844015'
+lifecycle_stage: active
+run_id: 74dd172bc3764defb0efdcf151cb3e65
+run_name: magnificent-frog-729
+run_uuid: 74dd172bc3764defb0efdcf151cb3e65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734538256868
+status: 1
+tags: []
+user_id: lenovo

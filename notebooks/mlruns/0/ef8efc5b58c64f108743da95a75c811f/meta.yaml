@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/notebooks/mlruns/0/ef8efc5b58c64f108743da95a75c811f/artifacts
+end_time: 1734537405563
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ef8efc5b58c64f108743da95a75c811f
+run_name: amusing-sheep-465
+run_uuid: ef8efc5b58c64f108743da95a75c811f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734537394755
+status: 3
+tags: []
+user_id: lenovo
