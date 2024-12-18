@@ -4,7 +4,7 @@ Write-Host "Création de l'environnement virtuel Python..."
 python -m venv .env
 
 Write-Host "Activation de l'environnement virtuel..."
-& ..\.env\Scripts\Activate
+..\.env\Scripts\Activate.ps1
 
 Write-Host "Mise à jour de pip..."
 C:\Users\lenovo\Desktop\Cours\034_MLOPS\.env\Scripts\python.exe -m pip install -U pip

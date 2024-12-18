@@ -1,0 +1,26 @@
+artifact_path: logistic
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 817
+model_uuid: 12aebfd457a146c0b00dbab26b88f2e8
+run_id: 1ebf76dfa25c49a586f527a0f0c640ae
+signature:
+  inputs: '[{"type": "double", "name": "feature1", "required": true}, {"type": "double",
+    "name": "feature2", "required": true}, {"type": "double", "name": "feature3",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-17 21:48:34.787738'

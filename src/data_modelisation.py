@@ -45,6 +45,7 @@ class model_maker_tester:
     def make_dummies_X_y(self,data,flg_train_test,test_size=0.33,rnd_state=42):
         if self.cat_cols is not None : Xy=data.to_dummies(columns=self.cat_cols,drop_first=False)
         else : Xy=data
+        logging.debug(f'Jeu de donnee : {Xy}')
         X=Xy[self.fit_cols]
         y=data[self.y_col]
         logging.info('CREATION TRAIN TEST DATASETS')
@@ -67,7 +68,7 @@ class model_maker_tester:
             logging.info(f'SCORE DU MODELE  {score}')
             signature=infer_signature(X,model.predict(X))
             log_model_version(model,model_name,signature,data,score,model.get_params(),experience_name,version)
-
+        #prevoir un return (soit score soit model)
         else :
             logging.debug(f'DATA TO PREDICT {X}')
             logging.info(f'PREDICTION DU MODEL {model.predict(X)}')

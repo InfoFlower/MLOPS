@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from models import model_maker_tester
+import logging
+from data_modelisation import model_maker_tester
+logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 
 ####### JEU DE DONNEES TEST FAIT PAR IA #############
 # Créer des données de test
@@ -18,7 +20,7 @@ model = LogisticRegression()
 
 
 test=model_maker_tester(None,['feature1','feature2','feature3'],'target')
-know=test(model,'logistic',df,flg_first=True)
+know=test(model,'logistic',df,'V0.1',flg_first=True)
 print(know)
 model_test=know
 data_to_pred=df[['feature1','feature2','feature3']]
