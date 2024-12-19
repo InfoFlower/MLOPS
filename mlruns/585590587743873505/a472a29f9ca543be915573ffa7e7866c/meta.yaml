@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/a472a29f9ca543be915573ffa7e7866c/artifacts
+end_time: 1734627538017
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: a472a29f9ca543be915573ffa7e7866c
+run_name: enthused-perch-581
+run_uuid: a472a29f9ca543be915573ffa7e7866c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734627532723
+status: 3
+tags: []
+user_id: lenovo

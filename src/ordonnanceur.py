@@ -8,6 +8,11 @@ import time
 import logging 
 logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 
+param_grid = {
+                    'C': [0.001, 0.01, 0.1, 1, 10, 100], 
+                    'penalty': ['l1', 'l2'] 
+                }
+
 col_to_drop=['MONTH','YEAR','stationCode','is_installed','station_id','is_returning','is_renting','num_bikes_available','num_docks_available','numDocksAvailable']
 key=['last_reported','HOUR','numBikesAvailable']
 

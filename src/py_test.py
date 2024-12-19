@@ -2,11 +2,14 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from data_modelisation import model_maker_tester
 from data_processing import make_great_dataset
-import mlflow
 
+param_grid = { 
+    'n_estimators': [200, 500],
+    'max_features': ['auto', 'sqrt', 'log2'],
+    'max_depth' : [4,5,6,7,8],
+    'criterion' :['gini', 'entropy']
+}
 
-
-mlflow.set_tracking_uri('file:/./mlruns')
 #Var d'initialisation du data_processing
 col_to_drop=['MONTH','YEAR','stationCode','is_installed','station_id','is_returning','is_renting','num_bikes_available','num_docks_available','numDocksAvailable']
 key=['last_reported','HOUR','numBikesAvailable']
@@ -22,4 +25,4 @@ to_fit=['last_reported', 'DAY', 'DAY OF WEEK','DAY OF YEAR', 'HOUR', 'MIN', 'num
 to_pred='numBikesAvailable'
 cat_cols=None
 model_maker = model_maker_tester(cat_cols,to_fit,to_pred)
-model_maker(RandomForestClassifier(),'LogisticRegression',df,'V0_test_ipynb','Velib',flg_first=True)
+model_maker(RandomForestClassifier(random_state=42),'LogisticRegression',df,'V0_test_ipynb',param_grid,'Velib',flg_first=True)

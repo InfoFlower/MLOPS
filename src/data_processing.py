@@ -1,5 +1,6 @@
 import pandas as pd
 import datetime
+import logging
 
 class make_great_dataset:
     def __init__(self,col_to_drop,key):
@@ -14,7 +15,8 @@ class make_great_dataset:
         data_clean_unique=data_clean.drop_duplicates(self.key)
         data_featured=data_clean_unique.reset_index(drop=True)[1:]
         if col_make_delta is not None :  data_featured['delta']=self.delta(data_clean_unique.reset_index(),col_make_delta)
-        return data_featured.dropna().reset_index(drop=True)
+        logging.debug(f'Data without NA {data_featured.dropna(inplace=True)}')
+        return data_featured
     
     def delta(self,data,col):
         """

@@ -6,9 +6,10 @@ mf.sklearn.autolog()
 logging.getLogger('matplotlib').setLevel(logging.WARNING)
 logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 from mlflow.models import infer_signature
+from sklearn.model_selection import GridSearchCV
+from mlflow.data.pandas_dataset import PandasDataset
 
-
-mf.set_tracking_uri("")
+mf.set_tracking_uri("file:mlruns")
 
 def log_model_version(model,model_name,signature,data,scores,hyperparam_value,exprience_name,version):
     """
@@ -21,10 +22,9 @@ def log_model_version(model,model_name,signature,data,scores,hyperparam_value,ex
         mf.sklearn.log_model(model,model_name,signature= signature)
         for metric_name, metric_value in scores.items():
             mf.log_metric(metric_name, metric_value)
-        mf.log_artifact(data_file_path)
-        mf.log_param("hyperparam_name", hyperparam_value)
-        run_id = run.info.run_id
-        logging.info(f"Model logged with run_id: {run_id}")
+        for param_name, param_value in hyperparam_value.items():
+            mf.log_param(param_name, param_value)
+        logging.info(f"Model logged with run_id: {run.info.run_id}")
 
 class model_maker_tester:
     def __init__(self,cat_cols,fit_cols,y_col):
@@ -50,7 +50,7 @@ class model_maker_tester:
         else : ret = X,y
         return ret
     
-    def __call__(self,model,model_name,data,version,experience_name='Velib',flg_to_score=True,flg_first=False):
+    def __call__(self,model,model_name,data,version,param_grid,experience_name='Velib',flg_to_score=True,flg_first=False):
         logging.debug(f'DATA : {data}')
         model=model
         model_name=model_name
@@ -59,7 +59,11 @@ class model_maker_tester:
         logging.info(f'Data to fit or predict : {X,y,X_train,X_test,y_train,y_test}')
         if flg_to_score :
             logging.info('FITTING DATA')
-            if flg_first:model.fit(X_train,y_train)
+            if flg_first:
+                grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy',n_jobs=-1)
+                grid_search.fit(X_train, y_train)
+                params = grid_search.best_params_
+                model = grid_search.best_estimator_
             logging.info('START SCORING')
             score=self.score(model,X_test,y_test)
             logging.info(f'SCORE DU MODELE  {score}')

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/76a0be2e7fc84e9aaae182c6fe1f3337/artifacts
+end_time: 1734628386143
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 76a0be2e7fc84e9aaae182c6fe1f3337
+run_name: upbeat-hog-636
+run_uuid: 76a0be2e7fc84e9aaae182c6fe1f3337
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734628332451
+status: 4
+tags: []
+user_id: lenovo
