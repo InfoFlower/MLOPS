@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/5e5559157dd64bd499297943ceaef7f4/artifacts
+deleted_time: 1734632796460
+end_time: 1734631910604
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: 5e5559157dd64bd499297943ceaef7f4
+run_name: First_model_tryed
+run_uuid: 5e5559157dd64bd499297943ceaef7f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631905547
+status: 3
+tags: []
+user_id: lenovo

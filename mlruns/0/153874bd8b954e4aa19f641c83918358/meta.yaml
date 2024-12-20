@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/153874bd8b954e4aa19f641c83918358/artifacts
+deleted_time: 1734632803855
+end_time: 1734631794581
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 153874bd8b954e4aa19f641c83918358
+run_name: tasteful-zebra-395
+run_uuid: 153874bd8b954e4aa19f641c83918358
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631789620
+status: 4
+tags: []
+user_id: lenovo

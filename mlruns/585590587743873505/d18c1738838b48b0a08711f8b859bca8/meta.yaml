@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/d18c1738838b48b0a08711f8b859bca8/artifacts
+deleted_time: 1734632796431
+end_time: 1734632706980
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: d18c1738838b48b0a08711f8b859bca8
+run_name: legendary-squid-109
+run_uuid: d18c1738838b48b0a08711f8b859bca8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734632706196
+status: 3
+tags: []
+user_id: lenovo

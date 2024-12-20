@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/2e59a42909e0468f9ed25d7ed4aba681/artifacts
+deleted_time: 1734699853263
+end_time: 1734633272167
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 2e59a42909e0468f9ed25d7ed4aba681
+run_name: omniscient-mink-112
+run_uuid: 2e59a42909e0468f9ed25d7ed4aba681
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633266851
+status: 4
+tags: []
+user_id: lenovo

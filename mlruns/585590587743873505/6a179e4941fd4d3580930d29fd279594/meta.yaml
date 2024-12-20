@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/6a179e4941fd4d3580930d29fd279594/artifacts
+deleted_time: 1734632869541
+end_time: 1734632806001
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: 6a179e4941fd4d3580930d29fd279594
+run_name: illustrious-owl-818
+run_uuid: 6a179e4941fd4d3580930d29fd279594
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734632804826
+status: 3
+tags: []
+user_id: lenovo

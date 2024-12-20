@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/1ebf76dfa25c49a586f527a0f0c640ae/artifacts
+deleted_time: 1734629638104
 end_time: 1734472121975
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 1ebf76dfa25c49a586f527a0f0c640ae
 run_name: mercurial-sheep-636
 run_uuid: 1ebf76dfa25c49a586f527a0f0c640ae

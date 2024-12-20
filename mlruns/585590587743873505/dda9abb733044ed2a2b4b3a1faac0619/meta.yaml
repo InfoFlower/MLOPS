@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/dda9abb733044ed2a2b4b3a1faac0619/artifacts
+end_time: 1734633301154
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: dda9abb733044ed2a2b4b3a1faac0619
+run_name: unequaled-toad-307
+run_uuid: dda9abb733044ed2a2b4b3a1faac0619
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633301087
+status: 3
+tags: []
+user_id: lenovo

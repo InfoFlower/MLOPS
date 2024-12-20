@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/a472a29f9ca543be915573ffa7e7866c/artifacts
+deleted_time: 1734629638102
 end_time: 1734627538017
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: a472a29f9ca543be915573ffa7e7866c
 run_name: enthused-perch-581
 run_uuid: a472a29f9ca543be915573ffa7e7866c

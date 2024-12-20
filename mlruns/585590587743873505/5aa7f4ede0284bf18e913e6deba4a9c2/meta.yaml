@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/5aa7f4ede0284bf18e913e6deba4a9c2/artifacts
+end_time: 1734633448599
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: 5aa7f4ede0284bf18e913e6deba4a9c2
+run_name: merciful-midge-772
+run_uuid: 5aa7f4ede0284bf18e913e6deba4a9c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633448536
+status: 3
+tags: []
+user_id: lenovo

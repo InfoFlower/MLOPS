@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/c392a33140fe4b0f92fda5ad59ee2f59/artifacts
+deleted_time: 1734699853175
+end_time: 1734633601294
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: c392a33140fe4b0f92fda5ad59ee2f59
+run_name: thoughtful-stag-433
+run_uuid: c392a33140fe4b0f92fda5ad59ee2f59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633596176
+status: 4
+tags: []
+user_id: lenovo

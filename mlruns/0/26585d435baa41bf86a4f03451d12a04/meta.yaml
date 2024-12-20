@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/26585d435baa41bf86a4f03451d12a04/artifacts
+deleted_time: 1734629578594
 end_time: 1734460941051
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 26585d435baa41bf86a4f03451d12a04
 run_name: rebellious-fly-678
 run_uuid: 26585d435baa41bf86a4f03451d12a04

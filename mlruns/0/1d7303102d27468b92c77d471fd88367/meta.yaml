@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/1d7303102d27468b92c77d471fd88367/artifacts
+deleted_time: 1734629578571
 end_time: 1734472114548
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 1d7303102d27468b92c77d471fd88367
 run_name: crawling-stoat-204
 run_uuid: 1d7303102d27468b92c77d471fd88367

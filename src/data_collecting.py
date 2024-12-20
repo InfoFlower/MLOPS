@@ -1,6 +1,6 @@
 import requests as rq
 import time
-
+import logging
 import polars as pl
 import time
 import json

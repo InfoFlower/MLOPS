@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/9909bb1d6aee4882a39de218ea13d651/artifacts
+deleted_time: 1734699853182
+end_time: 1734633474929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 9909bb1d6aee4882a39de218ea13d651
+run_name: youthful-bear-364
+run_uuid: 9909bb1d6aee4882a39de218ea13d651
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633469717
+status: 4
+tags: []
+user_id: lenovo

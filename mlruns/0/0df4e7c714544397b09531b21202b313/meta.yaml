@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/0df4e7c714544397b09531b21202b313/artifacts
+deleted_time: 1734699853223
+end_time: 1734633301053
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 0df4e7c714544397b09531b21202b313
+run_name: worried-shad-337
+run_uuid: 0df4e7c714544397b09531b21202b313
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633295498
+status: 4
+tags: []
+user_id: lenovo

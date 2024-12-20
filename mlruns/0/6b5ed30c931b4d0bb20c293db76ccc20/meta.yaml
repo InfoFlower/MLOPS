@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/6b5ed30c931b4d0bb20c293db76ccc20/artifacts
+deleted_time: 1734632803771
+end_time: 1734631853730
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6b5ed30c931b4d0bb20c293db76ccc20
+run_name: overjoyed-cow-415
+run_uuid: 6b5ed30c931b4d0bb20c293db76ccc20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631849138
+status: 4
+tags: []
+user_id: lenovo

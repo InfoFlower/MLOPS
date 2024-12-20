@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/af2a74f281e04286b3518a56e48ecbd1/artifacts
+deleted_time: 1734629632145
 end_time: 1734628393525
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: af2a74f281e04286b3518a56e48ecbd1
 run_name: agreeable-zebra-565
 run_uuid: af2a74f281e04286b3518a56e48ecbd1

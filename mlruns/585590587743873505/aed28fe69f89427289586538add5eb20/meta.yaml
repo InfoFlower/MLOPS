@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/aed28fe69f89427289586538add5eb20/artifacts
+deleted_time: 1734632796473
+end_time: 1734631564667
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: aed28fe69f89427289586538add5eb20
+run_name: secretive-loon-69
+run_uuid: aed28fe69f89427289586538add5eb20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631558847
+status: 3
+tags: []
+user_id: lenovo

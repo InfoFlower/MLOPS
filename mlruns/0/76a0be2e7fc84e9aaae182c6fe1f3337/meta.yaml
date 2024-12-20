@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/76a0be2e7fc84e9aaae182c6fe1f3337/artifacts
+deleted_time: 1734629578540
 end_time: 1734628386143
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 76a0be2e7fc84e9aaae182c6fe1f3337
 run_name: upbeat-hog-636
 run_uuid: 76a0be2e7fc84e9aaae182c6fe1f3337

@@ -1,0 +1,11 @@
+digest: 0548dc2e
+name: dataset
+profile: '{"num_rows": 40, "num_elements": 280}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "last_reported", "required":
+  true}, {"type": "long", "name": "DAY", "required": true}, {"type": "long", "name":
+  "DAY OF WEEK", "required": true}, {"type": "long", "name": "DAY OF YEAR", "required":
+  true}, {"type": "long", "name": "HOUR", "required": true}, {"type": "long", "name":
+  "MIN", "required": true}, {"type": "long", "name": "numDocks", "required": true}]}'
+source: '{"tags": {"mlflow.user": "lenovo", "mlflow.source.name": ".\\src\\py_test.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "540bb8eae64c2d2a2810c331bae8466da3e79bc8"}}'
+source_type: code

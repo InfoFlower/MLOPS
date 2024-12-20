@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/48f928bceff54c92b8f3cb402e5dc2c9/artifacts
+deleted_time: 1734629632109
 end_time: 1734628877085
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 48f928bceff54c92b8f3cb402e5dc2c9
 run_name: able-lynx-372
 run_uuid: 48f928bceff54c92b8f3cb402e5dc2c9

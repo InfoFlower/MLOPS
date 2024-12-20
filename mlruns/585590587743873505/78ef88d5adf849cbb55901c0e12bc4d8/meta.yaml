@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/78ef88d5adf849cbb55901c0e12bc4d8/artifacts
+deleted_time: 1734629632196
 end_time: 1734472122008
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 78ef88d5adf849cbb55901c0e12bc4d8
 run_name: luxuriant-whale-926
 run_uuid: 78ef88d5adf849cbb55901c0e12bc4d8

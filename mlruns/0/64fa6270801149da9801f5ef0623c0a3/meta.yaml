@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/64fa6270801149da9801f5ef0623c0a3/artifacts
+deleted_time: 1734632803852
+end_time: 1734631451245
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 64fa6270801149da9801f5ef0623c0a3
+run_name: placid-roo-618
+run_uuid: 64fa6270801149da9801f5ef0623c0a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631405854
+status: 4
+tags: []
+user_id: lenovo

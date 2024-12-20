@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/b6efdcfc881a43d5af327b4d3bbd651b/artifacts
+deleted_time: 1734629632180
 end_time: 1734627848206
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b6efdcfc881a43d5af327b4d3bbd651b
 run_name: auspicious-wasp-859
 run_uuid: b6efdcfc881a43d5af327b4d3bbd651b

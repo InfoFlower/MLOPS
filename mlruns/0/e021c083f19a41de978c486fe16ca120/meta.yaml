@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/e021c083f19a41de978c486fe16ca120/artifacts
+deleted_time: 1734632803758
+end_time: 1734632674991
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: e021c083f19a41de978c486fe16ca120
+run_name: gregarious-mare-264
+run_uuid: e021c083f19a41de978c486fe16ca120
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734632669533
+status: 4
+tags: []
+user_id: lenovo

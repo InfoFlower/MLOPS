@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/4ad47a3a3e0c43bca272af21f14c67bf/artifacts
+deleted_time: 1734629632193
 end_time: 1734627538021
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4ad47a3a3e0c43bca272af21f14c67bf
 run_name: suave-bird-422
 run_uuid: 4ad47a3a3e0c43bca272af21f14c67bf

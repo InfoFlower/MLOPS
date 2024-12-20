@@ -2,7 +2,7 @@
 from data_collecting import csv_maker,get_data,make_data_set
 from data_processing import make_great_dataset
 from data_modelisation import model_maker_tester
-
+import pandas as pd
 
 import time
 import logging 
@@ -37,12 +37,13 @@ while True:
     csv_maker(input_dir = './data/RAW/',data_in_file='data/station_detail_temp.csv',output_csv_file='data/station_detail_temp.csv',is_in=True,delete=True)
     df=pd.read_csv('./data/raw/station_detail_temp.csv')
     #make predict data_set (futur) ==> package data_processing
-    data_to_pred=df[to_fit]
+    prediction=model_fitted.predict(make_future(df,'MIN',to_fit))
+
     logging.info(f'PREDICTION FOR ===== {prediction}')
-    #make viz of predict ==> package data_visualisation 
-    if int(time.strftime('%H%M')) in  (1200,0000):
-        #get train test data ==> package models
-        collected_data=get_train_data()
+    if int(time.strftime('%H%M')) == 2359:
+        
+        
+        
         challenger_model=train_model(champion_model,collected_data)
         #faire process de valuation de models with new model and old one (type of model & hyperparam (grid_search_cv)) ==> package models
         which_model=test_models(new_model=challenger_model,OG_model=champion_model,data_test=f'./data/station_detail_temp.csv')

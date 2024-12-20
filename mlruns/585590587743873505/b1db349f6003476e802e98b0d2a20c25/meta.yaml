@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/b1db349f6003476e802e98b0d2a20c25/artifacts
+deleted_time: 1734629632213
 end_time: 1734460950546
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b1db349f6003476e802e98b0d2a20c25
 run_name: abrasive-kit-165
 run_uuid: b1db349f6003476e802e98b0d2a20c25

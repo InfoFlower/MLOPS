@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/e4a9e845e47a4b208db732fe008ea803/artifacts
+deleted_time: 1734629578561
 end_time: 1734628249416
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: e4a9e845e47a4b208db732fe008ea803
 run_name: amazing-frog-904
 run_uuid: e4a9e845e47a4b208db732fe008ea803

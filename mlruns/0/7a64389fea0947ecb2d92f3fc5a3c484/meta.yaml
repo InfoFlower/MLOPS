@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/7a64389fea0947ecb2d92f3fc5a3c484/artifacts
+deleted_time: 1734699853175
+end_time: 1734633523247
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7a64389fea0947ecb2d92f3fc5a3c484
+run_name: colorful-moose-599
+run_uuid: 7a64389fea0947ecb2d92f3fc5a3c484
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633516634
+status: 4
+tags: []
+user_id: lenovo

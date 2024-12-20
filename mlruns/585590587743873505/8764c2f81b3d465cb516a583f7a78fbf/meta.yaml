@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/8764c2f81b3d465cb516a583f7a78fbf/artifacts
+end_time: 1734633305430
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: 8764c2f81b3d465cb516a583f7a78fbf
+run_name: V0_py_test_2024_12_19:19_35
+run_uuid: 8764c2f81b3d465cb516a583f7a78fbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633301162
+status: 3
+tags: []
+user_id: lenovo

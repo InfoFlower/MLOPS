@@ -37,3 +37,15 @@ class make_great_dataset:
 
     def from_data_to_delta_data(data):
         return data.reset_index(drop=True)[1:]
+    
+def make_future(df,col_to_increment,to_fit):
+    df_to_pred = pd.DataFrame(df.iloc[-1].copy).T[to_fit]
+    logging.debug(f'DATAFRAME TO PREDICT : {df_to_pred.T}')
+    df_to_pred[col_to_increment]+=1
+    return df_to_pred
+
+import os
+def get_train_data(df):
+    os.remove(last_run)
+    df.to_csv(f'../data/run_{time.strftime("%y%m%d")}')
+    last_run=f'../data/run_{time.strftime("%y%m%d")}'

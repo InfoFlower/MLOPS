@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/a4f5ef4f8c634ddc9bdc2c0041663477/artifacts
+deleted_time: 1734632796447
+end_time: 1734631911088
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: a4f5ef4f8c634ddc9bdc2c0041663477
+run_name: polite-doe-876
+run_uuid: a4f5ef4f8c634ddc9bdc2c0041663477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734631905449
+status: 3
+tags: []
+user_id: lenovo
