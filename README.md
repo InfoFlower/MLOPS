@@ -1,3 +1,8 @@
+## Authors
+
+- [@Gabriel Lebovic](https://www.github.com/InfoFlower)
+- [@Jerome Le-Devehat](https://github.com/jeromeldv)
+- Adrien Desrousseaux
 
 # API Velib, prédiction des vélos
 
@@ -14,9 +19,5 @@ Le fichier Demo.ipynb a pour but de simuler le lancement du fichier main, ce fic
 
 
 
-## Authors
 
-- [@Gabriel Lebovic](https://www.github.com/InfoFlower)
-- [@Jerome Le-Devehat](https://github.com/jeromeldv)
-- Adrien Desrousseaux
 
