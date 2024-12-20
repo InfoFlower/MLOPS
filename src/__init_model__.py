@@ -55,7 +55,10 @@ champion_model=RandomForestClassifier()
 ########################################################################################
 flag_drop_file=False
 #data loading and processing
-df=make_great_dataset_api('data/station_detail_live.csv',col_sum_1,col_sum_2,col_make_sum,col_make_date=col_make_date)
+
+
+
+df=make_great_dataset_api('__init__/init_data.csv',col_sum_1,col_sum_2,col_make_sum,col_make_date=col_make_date)
 df.to_csv(f'data/df_{time.strftime("%y%m%d")}.csv')
 last_csv=f'data/df_{time.strftime("%y%m%d")}.csv'
 if flag_drop_file : os.remove(last_csv)

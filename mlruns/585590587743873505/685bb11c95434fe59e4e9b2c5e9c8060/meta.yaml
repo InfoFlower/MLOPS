@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/685bb11c95434fe59e4e9b2c5e9c8060/artifacts
+end_time: 1734719202961
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: 685bb11c95434fe59e4e9b2c5e9c8060
+run_name: auspicious-steed-21
+run_uuid: 685bb11c95434fe59e4e9b2c5e9c8060
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734719202870
+status: 3
+tags: []
+user_id: lenovo

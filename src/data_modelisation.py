@@ -112,10 +112,9 @@ class model_maker_tester:
             logging.info('FITTING DATA')
             grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy',n_jobs=-1)
             grid_search.fit(X_train, y_train)
-            params = grid_search.best_params_
             model = grid_search.best_estimator_
             score=self.score(model,X_test,y_test)
         else:score=self.score(model,X,y)
         signature=infer_signature(X,model.predict(X))
-        log_model_version(model,model_name,signature,data,score,params,experience_name,version)
+        log_model_version(model,model_name,signature,data,score,model.get_params(),experience_name,version)
         return model,score

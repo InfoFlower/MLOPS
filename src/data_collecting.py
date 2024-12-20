@@ -1,6 +1,8 @@
+import logging 
+logging.basicConfig(format='%(asctime)s %(levelname)s:%(name)s:%(message)s', level=logging.DEBUG)
 import requests as rq
 import time
-import logging
+
 import polars as pl
 import time
 import json

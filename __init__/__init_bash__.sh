@@ -1,20 +1,31 @@
-#!/bin/bash
-
 requirementsFilePath="requirements.txt"
 
 echo "Création de l'environnement virtuel Python..."
-python3 -m venv .env
+python -m venv .env
 
 echo "Activation de l'environnement virtuel..."
 source .env/bin/activate
 
+function get_installed_python_packages {
+    pipListOutput=$(pip list)
+    lines=$(echo "$pipListOutput" | tail -n +3)
+    packageNames=$(echo "$lines" | awk '{print $1}')
+    echo "$packageNames"
+}
+
 echo "Mise à jour de pip..."
-python -m pip install -U pip
+.env/bin/python -m pip install -U pip
+installed_packages=$(get_installed_python_packages)
+requirements=$(cat $requirementsFilePath)
 
-echo "Installation des packages depuis $requirementsFilePath..."
-while IFS= read -r package; do
+for package in $requirements; do
     echo "Installation de $package..."
-    pip install $package
-done < "$requirementsFilePath"
+    if ! echo "$installed_packages" | grep -q "^$package$"; then
+        pip install $package
+    else
+        echo "Package $package already installed"
+    fi
+done
 
-echo "Installation terminée."
+echo "Démarrage du serveur MLFLOW"
+mlflow server --host 127.0.0.1 --port 8080

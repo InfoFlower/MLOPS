@@ -1,4 +1,0 @@
-{
-  "precision_score-2_X_test-2": "precision_score(y_true=y_test, y_pred=<ndarray>, average='macro')",
-  "precision_score_X_test": "precision_score(y_true=y_test, y_pred=<ndarray>, average='macro')"
-}
