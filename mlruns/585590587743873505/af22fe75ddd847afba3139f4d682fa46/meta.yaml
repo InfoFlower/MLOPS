@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/af22fe75ddd847afba3139f4d682fa46/artifacts
+deleted_time: 1734714429266
 end_time: 1734633367557
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: af22fe75ddd847afba3139f4d682fa46
 run_name: angry-shad-693
 run_uuid: af22fe75ddd847afba3139f4d682fa46

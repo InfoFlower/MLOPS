@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/5aa7f4ede0284bf18e913e6deba4a9c2/artifacts
+deleted_time: 1734714429249
 end_time: 1734633448599
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5aa7f4ede0284bf18e913e6deba4a9c2
 run_name: merciful-midge-772
 run_uuid: 5aa7f4ede0284bf18e913e6deba4a9c2

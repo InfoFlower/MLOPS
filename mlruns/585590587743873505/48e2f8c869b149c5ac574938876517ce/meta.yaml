@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/48e2f8c869b149c5ac574938876517ce/artifacts
+deleted_time: 1734714429199
+end_time: 1734712998412
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: deleted
+run_id: 48e2f8c869b149c5ac574938876517ce
+run_name: welcoming-sheep-416
+run_uuid: 48e2f8c869b149c5ac574938876517ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734712998296
+status: 3
+tags: []
+user_id: lenovo

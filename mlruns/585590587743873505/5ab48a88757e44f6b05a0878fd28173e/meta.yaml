@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/5ab48a88757e44f6b05a0878fd28173e/artifacts
+deleted_time: 1734714429240
 end_time: 1734633475028
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5ab48a88757e44f6b05a0878fd28173e
 run_name: victorious-mule-73
 run_uuid: 5ab48a88757e44f6b05a0878fd28173e

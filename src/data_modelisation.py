@@ -27,8 +27,8 @@ def log_model_version(model,model_name,signature,data,scores,hyperparam_value,ex
     """
     now = datetime.now()
     mf.set_experiment(experiment_name=exprience_name)
-    data.to_csv('temp/train_data.csv')
-    data_file_path='temp/train_data.csv'
+    data.to_csv('data/temp/train_data.csv')
+    data_file_path='data/temp/train_data.csv'
     logging.info(f'Data user for training located in {data_file_path}')
     mf.log_param("version", version)
     run_name=f'{version}_{now.strftime("%Y_%m_%d:%H_%M")}'
@@ -44,6 +44,14 @@ def log_model_version(model,model_name,signature,data,scores,hyperparam_value,ex
 
 class model_maker_tester:
     def __init__(self,cat_cols,fit_cols,y_col):
+        """
+        Initializes the model_maker_tester class with categorical columns, fit columns, and target column.
+
+        Args:
+            cat_cols (list): List of categorical columns.
+            fit_cols (list): List of columns to fit the model.
+            y_col (str): Name of the target column.
+        """
         self.cat_cols=cat_cols
         self.fit_cols=fit_cols
         self.y_col=y_col
@@ -79,7 +87,7 @@ class model_maker_tester:
         else : ret = X,y
         return ret
     
-    def __call__(self,model,model_name,data,version,param_grid,experience_name='Velib',flg_to_score=True,flg_first=False):
+    def __call__(self,model,model_name,data,version,param_grid,experience_name='Velib',flg_first=False):
         """
         Fonction permettant l'entrainement, la prédiction et le score d'un modèle
 
@@ -99,21 +107,15 @@ class model_maker_tester:
         logging.debug(f'DATA : {data}')
         X_train, X_test, y_train, y_test = self.make_dummies_X_y(data,flg_train_test=True)
         X,y=self.make_dummies_X_y(data=data,flg_train_test=False)
-        logging.info(f'Data to fit or predict : {X,y,X_train,X_test,y_train,y_test}')
-        if flg_to_score :
+        logging.debug(f'Data to fit or predict : {X,y,X_train,X_test,y_train,y_test}')
+        if flg_first:
             logging.info('FITTING DATA')
-            if flg_first:
-                grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy',n_jobs=-1)
-                grid_search.fit(X_train, y_train)
-                params = grid_search.best_params_
-                model = grid_search.best_estimator_
-            logging.info('START SCORING')
+            grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy',n_jobs=-1)
+            grid_search.fit(X_train, y_train)
+            params = grid_search.best_params_
+            model = grid_search.best_estimator_
             score=self.score(model,X_test,y_test)
-            logging.info(f'SCORE DU MODELE  {score}')
-            signature=infer_signature(X,model.predict(X))
-            log_model_version(model,model_name,signature,data,score,params,experience_name,version)
-        #prevoir un return (soit score soit model)
-        else :
-            logging.debug(f'DATA TO PREDICT {X}')
-            logging.info(f'PREDICTION DU MODEL {model.predict(X)}')
-        return model
+        else:score=self.score(model,X,y)
+        signature=infer_signature(X,model.predict(X))
+        log_model_version(model,model_name,signature,data,score,params,experience_name,version)
+        return model,score

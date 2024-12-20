@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/62aee406c2184572b52d055a46169e11/artifacts
+deleted_time: 1734714429310
 end_time: 1734633180670
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 62aee406c2184572b52d055a46169e11
 run_name: nervous-koi-103
 run_uuid: 62aee406c2184572b52d055a46169e11

@@ -1,9 +1,16 @@
 from mlflow.client import MlflowClient
-# Create an MLflow client
-client = MlflowClient(tracking_uri="file:mlruns")
-# Get the last model version of an experiment
-experiment_name = "Velib"
-experiment = client.get_experiment_by_name(experiment_name)
-latest_run = client.search_runs(experiment_ids=[experiment.experiment_id], order_by=["start_time DESC"], max_results=1)[0]
-model_uri = f"runs:/{latest_run.info.run_id}/model"
-print(f"Model URI: {model_uri}")
+from data_processing import make_great_dataset,make_future
+import mlflow.pyfunc
+import pandas as pd
+df=pd.read_csv('data/station_detail_temp.csv')
+to_fit=['last_reported', 'DAY', 'DAY OF WEEK','DAY OF YEAR', 'HOUR', 'MIN', 'numDocks']
+col_to_drop=['MONTH','YEAR','stationCode','is_installed','station_id','is_returning','is_renting','num_bikes_available','num_docks_available','numDocksAvailable']
+key=['last_reported','HOUR','numBikesAvailable']
+col_sum_1='numBikesAvailable'
+col_sum_2='numDocksAvailable'
+col_make_sum='numDocks'
+col_make_date='last_reported'
+test=make_great_dataset(col_to_drop,key)
+df=test('data/station_detail_temp.csv',col_sum_1,col_sum_2,col_make_sum,col_make_date=col_make_date)
+
+

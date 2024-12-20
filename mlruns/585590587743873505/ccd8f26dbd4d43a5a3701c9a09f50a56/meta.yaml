@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/ccd8f26dbd4d43a5a3701c9a09f50a56/artifacts
+deleted_time: 1734714429325
 end_time: 1734633162418
 entry_point_name: ''
 experiment_id: '585590587743873505'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: ccd8f26dbd4d43a5a3701c9a09f50a56
 run_name: V0_py_test_2024_12_19:19_32
 run_uuid: ccd8f26dbd4d43a5a3701c9a09f50a56
