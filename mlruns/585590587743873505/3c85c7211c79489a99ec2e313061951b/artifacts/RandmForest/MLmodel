@@ -1,0 +1,28 @@
+artifact_path: RandmForest
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 375756
+model_uuid: 01b120cac2ce4b5e99ec8c742c457b83
+run_id: 3c85c7211c79489a99ec2e313061951b
+signature:
+  inputs: '[{"type": "string", "name": "last_reported", "required": true}, {"type":
+    "long", "name": "DAY", "required": true}, {"type": "long", "name": "DAY OF WEEK",
+    "required": true}, {"type": "long", "name": "DAY OF YEAR", "required": true},
+    {"type": "long", "name": "HOUR", "required": true}, {"type": "long", "name": "MIN",
+    "required": true}, {"type": "long", "name": "numDocks", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-20 18:26:43.073572'

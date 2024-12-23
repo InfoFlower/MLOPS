@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/dbab57e6feb14e7db78f9e3cc35c520b/artifacts
+deleted_time: 1734629578580
+end_time: 1734627842669
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: dbab57e6feb14e7db78f9e3cc35c520b
+run_name: nebulous-bear-830
+run_uuid: dbab57e6feb14e7db78f9e3cc35c520b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734627841239
+status: 4
+tags: []
+user_id: lenovo

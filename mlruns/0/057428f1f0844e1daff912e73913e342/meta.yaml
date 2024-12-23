@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/057428f1f0844e1daff912e73913e342/artifacts
+deleted_time: 1734629578532
+end_time: 1734629520051
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 057428f1f0844e1daff912e73913e342
+run_name: melodic-dove-398
+run_uuid: 057428f1f0844e1daff912e73913e342
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734629471426
+status: 4
+tags: []
+user_id: lenovo

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/6f807c5a127449c9b799621911df29b9/artifacts
+end_time: 1734718380074
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: 6f807c5a127449c9b799621911df29b9
+run_name: nervous-wren-197
+run_uuid: 6f807c5a127449c9b799621911df29b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734718380009
+status: 3
+tags: []
+user_id: lenovo

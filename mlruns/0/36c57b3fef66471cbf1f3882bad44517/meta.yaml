@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/36c57b3fef66471cbf1f3882bad44517/artifacts
+deleted_time: 1734629578536
+end_time: 1734628868335
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 36c57b3fef66471cbf1f3882bad44517
+run_name: invincible-eel-971
+run_uuid: 36c57b3fef66471cbf1f3882bad44517
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734628802929
+status: 4
+tags: []
+user_id: lenovo

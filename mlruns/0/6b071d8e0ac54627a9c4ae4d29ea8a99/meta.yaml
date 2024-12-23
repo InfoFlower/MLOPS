@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/6b071d8e0ac54627a9c4ae4d29ea8a99/artifacts
+deleted_time: 1734632803737
+end_time: 1734632766685
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6b071d8e0ac54627a9c4ae4d29ea8a99
+run_name: grandiose-frog-765
+run_uuid: 6b071d8e0ac54627a9c4ae4d29ea8a99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734632761499
+status: 4
+tags: []
+user_id: lenovo

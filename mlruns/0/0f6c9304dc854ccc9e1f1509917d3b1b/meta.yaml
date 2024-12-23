@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/0f6c9304dc854ccc9e1f1509917d3b1b/artifacts
+deleted_time: 1734629578524
+end_time: 1734628597412
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 0f6c9304dc854ccc9e1f1509917d3b1b
+run_name: bouncy-quail-403
+run_uuid: 0f6c9304dc854ccc9e1f1509917d3b1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734628550173
+status: 4
+tags: []
+user_id: lenovo

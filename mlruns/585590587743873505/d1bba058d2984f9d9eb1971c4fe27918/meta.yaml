@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/d1bba058d2984f9d9eb1971c4fe27918/artifacts
+end_time: 1734718182160
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: d1bba058d2984f9d9eb1971c4fe27918
+run_name: smiling-steed-487
+run_uuid: d1bba058d2984f9d9eb1971c4fe27918
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734718182078
+status: 3
+tags: []
+user_id: lenovo

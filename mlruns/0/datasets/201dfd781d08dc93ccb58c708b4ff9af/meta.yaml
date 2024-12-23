@@ -1,0 +1,9 @@
+digest: ab9600da
+name: dataset
+profile: '{"num_rows": 67, "num_elements": 201}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "feature1", "required": true},
+  {"type": "double", "name": "feature2", "required": true}, {"type": "double", "name":
+  "feature3", "required": true}]}'
+source: '{"tags": {"mlflow.user": "lenovo", "mlflow.source.name": ".\\src\\py_test.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "4fa6ad3e2cacaf702dc553fcddaba8db90d7c467"}}'
+source_type: code

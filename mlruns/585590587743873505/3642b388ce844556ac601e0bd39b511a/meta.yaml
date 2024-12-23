@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/lenovo/Desktop/Cours/034_MLOPS/mlruns/585590587743873505/3642b388ce844556ac601e0bd39b511a/artifacts
+end_time: 1734719425736
+entry_point_name: ''
+experiment_id: '585590587743873505'
+lifecycle_stage: active
+run_id: 3642b388ce844556ac601e0bd39b511a
+run_name: charming-goat-719
+run_uuid: 3642b388ce844556ac601e0bd39b511a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734719425670
+status: 3
+tags: []
+user_id: lenovo

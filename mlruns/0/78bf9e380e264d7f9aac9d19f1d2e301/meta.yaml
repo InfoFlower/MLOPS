@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/78bf9e380e264d7f9aac9d19f1d2e301/artifacts
+deleted_time: 1734699853254
+end_time: 1734633180538
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 78bf9e380e264d7f9aac9d19f1d2e301
+run_name: youthful-swan-90
+run_uuid: 78bf9e380e264d7f9aac9d19f1d2e301
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633175315
+status: 4
+tags: []
+user_id: lenovo

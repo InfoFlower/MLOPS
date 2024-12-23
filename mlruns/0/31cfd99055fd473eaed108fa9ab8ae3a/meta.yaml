@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/31cfd99055fd473eaed108fa9ab8ae3a/artifacts
+deleted_time: 1734699853223
+end_time: 1734633367457
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 31cfd99055fd473eaed108fa9ab8ae3a
+run_name: stately-dog-561
+run_uuid: 31cfd99055fd473eaed108fa9ab8ae3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734633362340
+status: 4
+tags: []
+user_id: lenovo
